@@ -1,0 +1,675 @@
+:root {
+    --main-color: #ffe0e0e0;
+    --main-alt-color: #ffcc00;
+    --bg-color: #121212;
+    --divbc-color: #1e1e1e;
+    --divp-padding: 20px;
+    --headert-color: #333333;
+    --main-altt-color: #ffffff;
+    --alt-divbg-color: #1e1e1ed1;
+}
+
+::-webkit-scrollbar {
+    width: 15px;
+}
+
+::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+    background: white;
+    border-radius: 60px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: goldenrod;
+    border-radius: 40px;
+    border: pink 2px solid;
+    transition: 1.5s;
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+    color: wheat;
+}
+
+a:hover {
+    color: aliceblue;
+}
+
+body {
+    padding: 0px 40px;
+    background-color: black;
+    color: white;
+    font-family: sans-serif;
+}
+
+/* Start header */
+
+body header {
+    display: block;
+    margin-top: 16px;
+}
+
+body header .Dynamicly {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+body header .Dynamicly .Phone-number {
+
+}
+
+body header .Dynamicly .Serveses {
+    display: flex;
+    justify-content: space-between;
+}
+
+body header .Dynamicly .Serveses .search {
+    cursor: pointer;
+    margin-right: 22px;
+}
+
+body header .Dynamicly .Serveses .search small {
+    display: flex;
+    align-items: center;
+}
+
+body header .Dynamicly .Serveses .search small input {
+    display: block;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    width: 100%;
+    max-width: 300px;
+    background-color: var(--divbc-color);
+    color: var(--main-altt-color);
+}
+
+body header .Dynamicly .Serveses .search small input.show {
+    opacity: 1;
+}
+
+
+body header .Dynamicly .Serveses .search small svg {
+    margin-right: 6px;
+}
+
+body header .Dynamicly .Serveses .search small svg.Cos {
+
+}
+
+body header .Dynamicly .Serveses .search small:hover svg.Cos {
+    color: aqua;
+}
+
+body header .Dynamicly .Serveses .search small svg.x {
+    color: red;
+    cursor: pointer;
+    display: none;
+}
+
+body header .Dynamicly .Serveses .search small p {
+
+}
+
+body header .Dynamicly .Serveses .search small:hover p {
+    color: aqua;
+}
+
+body header .Dynamicly .Serveses .search .search-result {
+    position: absolute;
+    padding: var(--divp-padding);
+    background-color: var(--alt-divbg-color);
+    z-index: 1;
+    display: none;
+    transform: translateX(-118px);
+    margin-top: 25px;
+}
+
+body header .Dynamicly .Serveses .search .search-result .pro-main {
+    display: flex;
+}
+
+body header .Dynamicly .Serveses .search .search-result .pro-main:not(:last-child) {
+    border-bottom: 1px solid var(--main-alt-color);
+    margin-bottom: 6px;
+    margin-top: 6px;
+}
+
+body header .Dynamicly .Serveses .search .search-result .pro-main .pro-image {
+    margin-right: 16px;
+}
+
+body header .Dynamicly .Serveses .search .search-result .pro-main .pro-image img {
+    width: 156px;
+}
+
+body header .Dynamicly .Serveses .search .search-result .pro-main .pro-properts {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    text-align: start;
+}
+
+body header .Dynamicly .Serveses .search .search-result .pro-main .pro-properts h2 {
+    font-size: larger;
+}
+
+body header .Dynamicly .Serveses .search .search-result .pro-main .pro-properts p {
+    color: red;
+    font-size: large;
+}
+
+body header .Dynamicly .Serveses .login {
+    cursor: pointer;
+    margin-right: 22px;
+}
+
+body header .Dynamicly .Serveses .login svg:hover {
+    color: aqua;
+}
+
+body header .Dynamicly .Serveses .wishlist {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    margin-right: 22px;
+}
+
+body header .Dynamicly .Serveses .wishlist svg {
+    margin-right: 6px;
+}
+
+body header .Dynamicly .Serveses .wishlist:hover svg {
+    color: aqua;
+}
+
+body header .Dynamicly .Serveses .wishlist p {
+
+}
+
+body header .Dynamicly .Serveses .wishlist:hover p {
+    color: aqua;
+}
+
+body header .Sustanable {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+    padding-bottom: 16px;
+    border-bottom: 1px solid white;
+}
+
+body header .Sustanable .logo {
+
+}
+
+body header .Sustanable .logo h2 a {
+
+}
+
+body header .Sustanable .Links {
+    width: 60%;
+    margin-top: 6px;
+}
+
+body header .Sustanable .Links ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+body header .Sustanable .Links ul li {
+    margin-left: 6px;
+}
+
+body header .Sustanable .card {
+    display: flex;
+    align-items: center;
+}
+
+body header .Sustanable .card p {
+    margin-top: 4px;
+    margin-left: 6px;
+    color: #53544e;
+}
+
+/* end header */
+/* start body */
+
+body main {
+    background-color: ;
+    margin-top: 5%;
+}
+
+body main .last-chance {
+    display: flex;
+    gap: 35px;
+    background-color: var(--main-color);
+    border-bottom: 1px solid var(--main-altt-color);
+}
+
+body main .last-chance .photo {
+    background-image: url(../../img/01_1170x577_crop_center.webp);
+    width: 75%;
+    height: 71vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+body main .last-chance .photo #New-Collection {
+    color: var(--main-alt-color);
+    text-align: center;
+    position: relative;
+    top: 26%;
+    font-size: 38px;
+    left: -153px;
+}
+
+body main .last-chance .photo #New-Collection h2 {
+    color: var(--headert-color);
+    animation: infinitePulse 3s infinite ease-in-out;
+}
+
+@keyframes infinitePulse {
+    0%, 100% {
+        color: var(--headert-color);
+        transform: scale(1);
+    }
+    50% {
+        color: var(--main-alt-color);
+        transform: scale(1.1);
+    }
+}
+
+body main .last-chance .photo #New-Collection p {
+}
+
+body main .last-chance .photo #New-Collection button {
+    background-color: var(--main-alt-color);
+    padding: 9px;
+    border: 1px solid var(--headert-color);
+    border-radius: 25px;
+    cursor: pointer;
+}
+
+body main .last-chance .photo #New-Collection button:hover {
+    background-color: #9fdbc6;
+    transition: 0.3s;
+}
+
+body main .last-chance .photo .new-span {
+    display: flex;
+    justify-content: space-around;
+    width: 95px;
+    position: absolute;
+    left: 62%;
+    bottom: 12%;
+}
+
+body main .last-chance .photo .new-span span {
+    background-color: var(--divbc-color);
+    border-radius: 100%;
+    width: 19px;
+    height: 19px;
+    border: 1px solid var(--headert-color);
+    cursor: pointer;
+}
+
+body main .last-chance .photo .new-span .span-Active {
+    background-color: var(--main-alt-color);
+    transition: 0.3s;
+}
+
+body main .last-chance .detatles {
+    width: 25%;
+    margin-right: 20px;
+}
+
+body main .last-chance .detatles .hotest-style {
+    background-image: url(../../img/030_270x330_crop_top.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 50%;
+}
+
+body main .last-chance .detatles .hotest-style div {
+    background-color: var(--main-color);
+    border-radius: 6px;
+    text-align: center;
+    position: relative;
+    top: 80%;
+    left: 5%;
+    width: 90%;
+    padding: var(--divp-padding);
+}
+
+body main .last-chance .detatles .hotest-style div:hover {
+    background-color: var(--headert-color);
+    transition: 0.3s;
+}
+
+body main .last-chance .detatles .hotest-style div a h4 {
+    color: var(--headert-color);
+}
+
+body main .last-chance .detatles .hotest-style div:hover a h4 {
+    color: var(--main-altt-color);
+    transition: 0.3s;
+}
+
+body main .last-chance .detatles .hotest-style div a h3 {
+    color: var(--main-alt-color);
+}
+
+body main .last-chance .detatles .last-up {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: chocolate;
+    margin-top: 25px;
+    height: 245px;
+}
+
+body main .prodact-market {
+    margin-top: 25%;
+    color: var(--main-altt-color);
+    padding: 30px;
+    display: grid;
+    grid-template-columns: 15% 85%;
+    gap: 20px;
+    border-bottom: 1px solid var(--main-altt-color);
+}
+
+body main .prodact-market .First-Section {
+    background-color: var(--divbc-color);
+    text-align: center;
+}
+
+body main .prodact-market .First-Section .Category {
+    border-bottom: 1px solid var(--headert-color);
+    padding-bottom: 9px;
+}
+
+body main .prodact-market .First-Section .Category h2 {
+}
+
+body main .prodact-market .First-Section .Category-View {
+    display: flex;
+    flex-direction: column;
+}
+
+body main .prodact-market .First-Section .Category-View a {
+    color: var(--main-color);
+    border-bottom: 1px solid;
+    margin-top: 20px;
+}
+
+body main .prodact-market .Second-Section {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    align-items: center;
+    text-align: center;
+}
+
+body main .prodact-market .Second-Section div {
+}
+
+body main .prodact-market .Second-Section div h2 {
+
+}
+
+body main .prodact-market .Second-Section div img {
+    
+}
+
+body main .prodact-market .prodcs-show {
+    grid-column: 1 / -1;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    align-items: center;
+    width: 100%;
+    margin-top: 80px;
+    border-bottom: 1px solid var(--main-alt-color);
+    margin-bottom: 120px;
+    padding: 20px;
+}
+
+body main .prodact-market .prodcs-show div {
+    position: relative;
+    overflow: hidden;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 10px;
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+body main .prodact-market .prodcs-show div:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+body main .prodact-market .prodcs-show div img {
+    width: 100%;
+    height: 200px;
+    transition: opacity 0.3s ease;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 8px;
+}
+
+body main .prodact-market .prodcs-show div h2 {
+    font-size: 1.2em;
+    margin: 10px 0;
+    color: var(--main-text-color);
+}
+
+body main .prodact-market .prodcs-show div:hover img {
+    opacity: 0.3;
+}
+
+body main .prodact-market .prodcs-show div .hover-img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+body main .prodact-market .prodcs-show div:hover .hover-img {
+    opacity: 1;
+}
+
+body main .prodact-market .prodcs-show div .bottomdiv {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: var(--alt-divbg-color);
+}
+
+body main .prodact-market .prodcs-show div .bottomdiv button {
+    background-color: var(--divbc-color);
+    color: var(--main-altt-color);
+    outline: none;
+    padding: 6px;
+    border: 1px solid var(--main-alt-color);
+    cursor: pointer;
+}
+
+body main .prodact-market .prodcs-show div .bottomdiv button:hover {
+    background-color: var(--headert-color);
+}
+
+/* body main .prodact-market .book-section {
+    width: 80%;
+    height: 80%;
+    background-color: var(--divbc-color);
+    display: flex;
+} */
+
+body main .CurdsSystem {
+
+}
+
+body main .CurdsSystem form {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+body main .CurdsSystem form div {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 16px;
+}
+
+body main .CurdsSystem input[type="text"],
+body main .CurdsSystem input[type="number"] {
+    padding: 10px;
+    background-color: var(--main-color);
+    border: 1px solid var(--main-alt-color);
+    border-radius: 5px;
+    color: var(--headert-color);
+}
+
+body main .CurdsSystem button {
+    padding: 12px;
+    background-color: var(--main-alt-color);
+    color: var(--main-altt-color);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+body main .CurdsSystem button:hover {
+    background-color: var(--main-color);
+    color: var(--headert-color);
+}
+
+body main .prodact-market  .book-section {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border: 2px solid #ddd;
+    border-radius: 15px;
+    padding: 40px; 
+    background-color: var(--alt-divbg-color);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); 
+    max-width: 800px;
+    z-index: 1000;
+    display: none;
+}
+
+body main .prodact-market  .book-section div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    gap: 15px; 
+}
+
+body main .prodact-market  .book-section div:not(:last-child) {
+    margin-right: 10px;
+    padding-right: 10px;
+    border-right: 5px solid var(--main-alt-color);
+}
+
+body main .prodact-market  .book-section img {
+    width: 200px;
+    height: auto;
+    border-radius: 10px;
+}
+
+body main .prodact-market  .book-section h2 {
+    font-size: 2rem; 
+    color: var(--main-altt-color);
+    margin: 0;
+}
+
+body main .prodact-market .book-section h3 {
+    font-size: 1.2rem;
+    margin: 10px 0;
+}
+
+body main .prodact-market  .book-section h3:nth-child(2) {
+    font-weight: bold;
+}
+
+body main .prodact-market  .book-section span {
+    display: inline-block;
+    width: 30px; 
+    height: 30px;
+    border-radius: 50%;
+    border: 2px solid #333;
+}
+
+body main .prodact-market  .book-section button {
+    color: #fff;
+    padding: 15px 20px; 
+    border: none;
+    border-radius: 8px; 
+    cursor: pointer;
+    font-size: 1.2rem; 
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+body main .prodact-market  .book-section button:hover {
+    background-color: rgb(65, 40, 200);
+    transform: scale(1.05);
+}
+
+body main .prodact-market  .book-section button:active {
+    transform: scale(0.95); 
+}
+
+body main .prodact-market  .book-section svg {
+    cursor: pointer;
+    position: absolute;
+    top: 7px;
+    right: 12px;
+    color: red;
+}
+
+
+/* End Body */
+
+
+
+/* My Framework */
+
+
+
+.hide {
+    opacity: 0;
+    display: none;
+    transition: opacity 0.3s ease;
+}
+
+.show {
+    opacity: 1 !important;
+    display: block !important;
+    transition: opacity 0.3s ease !important;
+}
